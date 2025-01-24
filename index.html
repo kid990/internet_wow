@@ -1,14 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://kid990.github.io/internet_wow/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="https://kid990.github.io/internet_wow/assets/index-DBof38LS.js"></script>
-    <link rel="stylesheet" crossorigin href="https://kid990.github.io/internet_wow/assets/index-n_ryQ3BS.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Cobertura</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #0078D7;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 60px);
+    }
+    iframe {
+      border: none;
+      width: 90%;
+      height: 90%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #0078D7;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mapa de Cobertura</h1>
+  </header>
+  <main>
+    <iframe src="https://sgc.wowperu.pe/cobertura/maps-cobertura" title="Mapa de Cobertura"></iframe>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mapa de Cobertura</p>
+  </footer>
+  <script>
+    // Puedes agregar alguna funcionalidad interactiva aquí si es necesario
+    console.log('Mapa cargado correctamente');
+  </script>
+</body>
 </html>
